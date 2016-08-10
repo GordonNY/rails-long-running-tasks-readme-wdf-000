@@ -11,7 +11,7 @@ Most of the things we do in Rails apps revolve around simple tasks that affect o
 
 Sometimes, however, we need to do something that takes longer to do and heavily impacts page load time, like sending a bunch of emails, uploading large files, manipulating a lot of records, or generating a report. Let's look at how that might happen.
 
-## Importing Records From CSV
+## Importing Records From CSV  
 
 A common task in many systems is importing records from a Comma-Separated Value (CSV) file. You might need to do this for any number of reasons, from seeding a new database to integrating and sharing data from another system.
 
@@ -49,7 +49,7 @@ Then let's add the controls to upload a file to our `index` view:
 
 Finally, let's get into our controller and handle this file upload.
 
-To do that, we first need to examine the file. Check out `db/customers.csv`. The first row defines the fields, and isn't part of the dataset, so that's called a `header`. 
+To do that, we first need to examine the file. Check out `db/customers.csv`. The first row defines the fields, and isn't part of the dataset, so that's called a `header`.
 
 Each row is ordinal, like an array, so position 0 is email, position 1 is first name, and position 2 is last name.
 
